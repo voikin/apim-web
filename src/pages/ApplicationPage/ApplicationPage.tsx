@@ -54,8 +54,8 @@ export const ApplicationPage = () => {
         </div>
       ) : (
         <div>
-          <h1 className="text-2xl font-bold">{application?.name}</h1>
-          <p className="text-muted-foreground text-sm">{application?.id}</p>
+          <h1 className="text-2xl font-bold">{application?.application?.name}</h1>
+          <p className="text-muted-foreground text-sm">{application?.application?.id}</p>
         </div>
       )}
 

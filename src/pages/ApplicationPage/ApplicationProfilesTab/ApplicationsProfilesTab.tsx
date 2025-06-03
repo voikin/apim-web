@@ -59,7 +59,7 @@ export function ApplicationProfilesTab({ profiles, application }: ApplicationPro
     onSuccess: async () => {
       toast.success("Профиль загружен");
       setFlags({});
-      await queryClient.invalidateQueries({ queryKey: ["profiles", appId] });
+      await queryClient.invalidateQueries({ queryKey: ["application", appId] });
     },
     onError: () => toast.error("Ошибка при загрузке профиля"),
   });
